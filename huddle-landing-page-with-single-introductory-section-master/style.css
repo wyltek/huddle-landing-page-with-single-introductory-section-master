@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-violet: hsl(257, 40%, 49%);
+    --primary-soft-magenta: hsl(300, 69%, 71%);
+
+}
+body {
+    background-color: var(--primary-violet);
+    background-image: url("/images/bg-desktop.svg");
+    color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-header {
+    padding: 68px;
+}
+
+.site-logo {
+    width: 15%;
+    height: 15%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 68px;
+    padding-right: 68px;
+    gap: 62px;
+}
+
+.hero-img {
+    width: auto;
+    height: auto;
+}
+
+.right-box {
+    padding-top: 64px;
+}
+
+h1 {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    
+}
+
+button {
+    margin-top: 22px;
+    border: none;
+    padding: 12px 64px 12px 64px;
+    border-radius: 70px;
+    color: var(--primary-violet);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+    
+}
+
+button:hover {
+    background-color: var(--primary-soft-magenta);
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 64px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+
+    a {
+        color: white;
+        font-size: 18px;
+    }
+}
+
+a:hover {
+    color: var(--primary-soft-magenta);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 400px;
+        margin: 30px auto;
+    }
+    
+    .site-logo {
+        width: 70%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    h1 {
+        line-height: 2.3rem;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    p {
+        line-height: 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .right-box {
+        padding-top: 12px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    button {
+        
+        align-items: center;
+        margin-left: 32px;
+    }
+
+    .icons {
+        display: flex;
+        margin-left: 62px;
+    }
+}
